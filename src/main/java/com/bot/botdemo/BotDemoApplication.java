@@ -12,6 +12,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import java.util.Random;
+import java.util.concurrent.ExecutionException;
 
 @SpringBootApplication
 @LineMessageHandler
@@ -42,7 +44,7 @@ public class BotDemoApplication extends SpringBootServletInitializer {
 
     private String getRandomJawaban(){
         String jawaban = "";
-        int random = new random().nextInt();
+        int random = new Random().nextInt();
         if(random%2==0){
             jawaban = "Ya";
         } else{
@@ -57,7 +59,7 @@ public class BotDemoApplication extends SpringBootServletInitializer {
             lineMessagingClient
                     .replyMessage(new ReplyMessage(replyToken, jawabanDalamBentukTextMessage))
                     .get();
-        } catch (InterruptedException | Exception e) {
+        } catch (InterruptedException | ExecutionException e) {
             System.out.println("Ada error saat ingin membalas chat");
         }
     }
