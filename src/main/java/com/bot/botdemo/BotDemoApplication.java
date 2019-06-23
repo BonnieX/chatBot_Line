@@ -35,13 +35,16 @@ public class BotDemoApplication extends SpringBootServletInitializer {
     public void handleTextEvent(MessageEvent<TextMessageContent> messageEvent){
         String pesan = messageEvent.getMessage().getText().toLowerCase();
         String[] pesanSplit = pesan.split(" ");
+        String replyToken = messageEvent.getReplyToken();
         if(pesanSplit[0].equals("apakah")){
             String jawaban = getRandomJawaban();
-            String replyToken = messageEvent.getReplyToken();
+            
             balasChatDenganRandomJawaban(replyToken, jawaban);
         }
 
         else if(pesanSplit[0].equals("/jadwal")){
+            openJadwal jadwal = new openJadwal();
+            balasChatDenganRandomJawaban(replyToken, jadwal.getJadwal());
 
         }
     }
