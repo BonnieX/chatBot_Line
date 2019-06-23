@@ -44,7 +44,7 @@ public class BotDemoApplication extends SpringBootServletInitializer {
            
         }
 
-        else if(pesanSplit[0].equals("/jadwal")){
+        else if(pesanSplit[0].equals("jadwal")){
             
             jadwal.Jadwal();
            jawaban=jadwal.getJadwal();
