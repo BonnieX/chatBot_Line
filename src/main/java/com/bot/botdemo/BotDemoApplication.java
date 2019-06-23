@@ -46,10 +46,22 @@ public class BotDemoApplication extends SpringBootServletInitializer {
 
         else if(pesanSplit[0].equals("jadwal")){
             
-            jadwal.Jadwal();
-           jawaban=jadwal.getJadwal();
+            jadwal.open();
+           jawaban=jadwal.getOpen();
             
 
+        }
+        else if(pesanSplit[0].equals("aslab")){
+            if(pesanSplit.length==1){
+                jawaban="hai";
+            }
+            else{
+                aslab aslab = new aslab();
+                aslab.setUrl(pesanSplit[1]);
+                aslab.open();
+                jawaban = aslab.getOpen();
+            }
+            
         }
          balasChatDenganRandomJawaban(replyToken, jawaban);
     }

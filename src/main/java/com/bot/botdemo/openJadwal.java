@@ -6,14 +6,14 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class openJadwal {
-    private BufferedReader br;
-    private File file;
-    private String url="src/main/java/jadwal/jadwal.txt";
-    private String jadwal="";
-    private String data="";
+    protected BufferedReader br;
+    protected File file;
+    protected String url="src/main/java/jadwal/jadwal.txt";
+    protected String jadwal="";
+    protected String data="";
     
     
-    public void Jadwal(){
+    public void open(){
         
         file = new File(url);
         try {
@@ -28,7 +28,7 @@ public class openJadwal {
 
         
     }
-    public String getJadwal(){
+    public String getOpen(){
         return data;
     }
 }
