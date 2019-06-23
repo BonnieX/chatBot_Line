@@ -36,6 +36,7 @@ public class BotDemoApplication extends SpringBootServletInitializer {
         String pesan = messageEvent.getMessage().getText().toLowerCase();
         String[] pesanSplit = pesan.split(" ");
         String replyToken = messageEvent.getReplyToken();
+         openJadwal jadwal = new openJadwal();
         if(pesanSplit[0].equals("apakah")){
             String jawaban = getRandomJawaban();
             
@@ -43,7 +44,7 @@ public class BotDemoApplication extends SpringBootServletInitializer {
         }
 
         else if(pesanSplit[0].equals("/jadwal")){
-            openJadwal jadwal = new openJadwal();
+           
             String jawab=jadwal.getJadwal();
             balasChatDenganRandomJawaban(replyToken, jawab);
 
