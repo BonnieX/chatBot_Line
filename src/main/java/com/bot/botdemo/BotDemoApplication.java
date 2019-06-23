@@ -44,7 +44,8 @@ public class BotDemoApplication extends SpringBootServletInitializer {
 
         else if(pesanSplit[0].equals("/jadwal")){
             openJadwal jadwal = new openJadwal();
-            balasChatDenganRandomJawaban(replyToken, jadwal.getJadwal());
+            String jawab=jadwal.getJadwal();
+            balasChatDenganRandomJawaban(replyToken, jawab);
 
         }
     }
