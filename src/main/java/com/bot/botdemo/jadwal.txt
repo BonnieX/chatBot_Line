@@ -1,0 +1,14 @@
+#SENIN#
+- Aljabar linier dan matriks (605 GKB 4) 
+jam: 10.20 - 12.00
+
+#SELASA#
+- matematika diskrit (606 GKB 4)
+jam: 13.00 - 14.40
+
+-Pemrograman Lanjut (308 GKB 2)
+jam: 15.15 - 16.55
+
+-Interaksi manusia komputer (601 GKB 4)
+jam: 16.55 - 19.05
+

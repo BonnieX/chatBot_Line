@@ -40,6 +40,10 @@ public class BotDemoApplication extends SpringBootServletInitializer {
             String replyToken = messageEvent.getReplyToken();
             balasChatDenganRandomJawaban(replyToken, jawaban);
         }
+
+        else if(pesanSplit[0].equals("/jadwal")){
+
+        }
     }
 
     private String getRandomJawaban(){
