@@ -8,7 +8,7 @@ import java.io.IOException;
 public class openJadwal {
     private BufferedReader br;
     private File file;
-    private String url="src/main/java/jadwal.txt";
+    private String url="src/main/java/jadwal/jadwal.txt";
     private String jadwal="";
     private String data="";
     
