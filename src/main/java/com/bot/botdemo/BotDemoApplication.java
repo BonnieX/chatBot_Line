@@ -37,7 +37,7 @@ public class BotDemoApplication extends SpringBootServletInitializer {
         String[] pesanSplit = pesan.split(" ");
         String replyToken = messageEvent.getReplyToken();
          openJadwal jadwal = new openJadwal();
-         String jawaban;
+         String jawaban="";
         if(pesanSplit[0].equals("apakah")){
            jawaban = getRandomJawaban();
             
