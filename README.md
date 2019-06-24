@@ -1,6 +1,10 @@
 # chatBot_Line
 
-Upload Pertama
+BOT LINE Asisten Mahasiswa
 ---------------
 
-Chat Bot sederhana hanya fitur "apakah" dan hanya dapat menjawab "iya" dan "tidak"
+
+FITUR FITUR YANG TERDAPAT DALAM BOT INI:
+1. APAKAH (PERTANYAAN)
+2. JADWAL
+3. ASLAB
