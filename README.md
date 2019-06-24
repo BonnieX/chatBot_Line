@@ -1,8 +1,6 @@
-# chatBot_Line
-
 BOT LINE Asisten Mahasiswa
 ---------------
-
+ID BOT :@432wxzei
 
 FITUR FITUR YANG TERDAPAT DALAM BOT INI:
 1. APAKAH (PERTANYAAN)
